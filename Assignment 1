@@ -1,9 +1,0 @@
-def conditional_actions(n):
-    if n % 2 != 0:
-        print("Hello")
-    elif n % 2 == 0 and 2 <= n <= 5:
-        print("Welcome")
-    elif n % 2 == 0 and 6 <= n <= 20:
-        print("Hello")
-    elif n % 2 == 0 and n > 20:
-        print("Welcome")
