@@ -1,6 +1,0 @@
-a = 12
-b = 45
-if a < 10 and a < b:
-    print("Both conditions are true.")
-else:
-    print("At least one of the conditions is false.")
