@@ -1,13 +1,18 @@
-# Given data
-total_students = 90
-total_boys = 45
-boys_with_grade_A = 20
+public class GirlsWithGradeA {
+    public static void main(String[] args) {
+        // Given data
+        int totalStudents = 90;
+        int totalBoys = 45;
+        double percentageGradeA = 50.0; // 50% of total students
+        int boysWithGradeA = 20;
 
-# Calculate total students with grade 'A'
-students_with_grade_A = total_students * 0.5
+        // Calculate total students with grade 'A'
+        double studentsWithGradeA = (percentageGradeA / 100) * totalStudents;
 
-# Calculate total girls with grade 'A'
-girls_with_grade_A = students_with_grade_A - boys_with_grade_A
+        // Calculate total girls with grade 'A'
+        double girlsWithGradeA = studentsWithGradeA - boysWithGradeA;
 
-# Display the result
-print("Total girls getting grade 'A':", int(girls_with_grade_A))
+        // Display the result
+        System.out.println("Total girls getting grade 'A': " + (int) girlsWithGradeA);
+    }
+}
