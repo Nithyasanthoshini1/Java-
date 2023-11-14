@@ -1,0 +1,13 @@
+# Given data
+total_students = 90
+total_boys = 45
+boys_with_grade_A = 20
+
+# Calculate total students with grade 'A'
+students_with_grade_A = total_students * 0.5
+
+# Calculate total girls with grade 'A'
+girls_with_grade_A = students_with_grade_A - boys_with_grade_A
+
+# Display the result
+print("Total girls getting grade 'A':", int(girls_with_grade_A))
