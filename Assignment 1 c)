@@ -1,27 +1,38 @@
 using a 3rd variable
-# Program 1: Swap using a third variable
-a = 4
-b = 9
+public class SwapWithThirdVariable {
+    public static void main(String[] args) {
+        // Assign values to variables 'a' and 'b'
+        int a = 4;
+        int b = 9;
 
-# Using a third variable to swap values
-temp = a
-a = b
-b = temp
+        // Using a third variable to swap values
+        int temp = a;
+        a = b;
+        b = temp;
 
-print("After swapping (using a third variable):")
-print("a =", a)
-print("b =", b)
+        // Display the result
+        System.out.println("After swapping (using a third variable):");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
+
 
 without using a third variable 
-# Program 2: Swap without using a third variable
-a = 4
-b = 9
+public class SwapWithoutThirdVariable {
+    public static void main(String[] args) {
+        // Assign values to variables 'a' and 'b'
+        int a = 4;
+        int b = 9;
 
-# Swapping without a third variable
-a = a + b
-b = a - b
-a = a - b
+        // Swapping without a third variable
+        a = a + b;
+        b = a - b;
+        a = a - b;
 
-print("After swapping (without using a third variable):")
-print("a =", a)
-print("b =", b)
+        // Display the result
+        System.out.println("After swapping (without using a third variable):");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+    }
+}
