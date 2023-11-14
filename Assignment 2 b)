@@ -1,0 +1,12 @@
+# Input a 3-digit number
+number = int(input("Enter a 3-digit number: "))
+
+# Check if the input is a 3-digit number
+if 99 < number < 1000:
+    # Reverse the digits
+    reversed_number = int(str(number)[::-1])
+
+    # Display the result
+    print("Reversed Number:", reversed_number)
+else:
+    print("Please enter a valid 3-digit number.")
