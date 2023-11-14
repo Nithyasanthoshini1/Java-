@@ -1,33 +1,38 @@
-import math
+class Triangle {
+    // Triangle sides
+    double side1, side2, side3;
 
-class Triangle:
-    def __init__(self):
-        # The constructor doesn't take any parameters for this example
-        pass
+    // Default constructor
+    public Triangle() {
+        // Default constructor with no parameters
+    }
 
-    def calculate_area(self, side1, side2, side3):
-        # Heron's formula to calculate the area of a triangle
-        s = (side1 + side2 + side3) / 2
-        area = math.sqrt(s * (s - side1) * (s - side2) * (s - side3))
-        return area
+    // Method to set the sides of the triangle
+    public void setSides(double s1, double s2, double s3) {
+        side1 = s1;
+        side2 = s2;
+        side3 = s3;
+    }
 
-    def calculate_perimeter(self, side1, side2, side3):
-        # Perimeter is the sum of all three sides
-        perimeter = side1 + side2 + side3
-        return perimeter
+    // Method to calculate and print the area of the triangle
+    public void calculateArea() {
+        // Using Heron's formula to calculate the area
+        double s = (side1 + side2 + side3) / 2;
+        double area = Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
+        System.out.println("Area of the triangle: " + area + " square units");
+    }
 
-# Create an instance of the Triangle class
-triangle_instance = Triangle()
+    // Method to calculate and print the perimeter of the triangle
+    public void calculatePerimeter() {
+        double perimeter = side1 + side2 + side3;
+        System.out.println("Perimeter of the triangle: " + perimeter + " units");
+    }
+}
 
-# Given sides of the triangle
-side1 = 3
-side2 = 4
-side3 = 5
+public class Main {
+    public static void main(String[] args) {
+        // Create an instance of the Triangle class
+        Triangle triangle = new Triangle();
 
-# Calculate and print the area
-area = triangle_instance.calculate_area(side1, side2, side3)
-print("Area of the triangle:", area, "square units")
-
-# Calculate and print the perimeter
-perimeter = triangle_instance.calculate_perimeter(side1, side2, side3)
-print("Perimeter of the triangle:", perimeter, "units")
+        // Set the sides of the triangle
+        triangle.setSides(3, 4, 5
