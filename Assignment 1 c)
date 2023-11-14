@@ -1,0 +1,27 @@
+using a 3rd variable
+# Program 1: Swap using a third variable
+a = 4
+b = 9
+
+# Using a third variable to swap values
+temp = a
+a = b
+b = temp
+
+print("After swapping (using a third variable):")
+print("a =", a)
+print("b =", b)
+
+without using a third variable 
+# Program 2: Swap without using a third variable
+a = 4
+b = 9
+
+# Swapping without a third variable
+a = a + b
+b = a - b
+a = a - b
+
+print("After swapping (without using a third variable):")
+print("a =", a)
+print("b =", b)
